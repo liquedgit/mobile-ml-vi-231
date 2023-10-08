@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698688779270",
+    "project_id": "mobile-ml-vi-231",
+    "storage_bucket": "mobile-ml-vi-231.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698688779270:android:c0ab2e3424488fa9d63f87",
+        "android_client_info": {
+          "package_name": "com.binus.beeshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMkVb0W0BQwPjWnZC1xGYTq1pBY7kFffg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
