@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    android:orientation="vertical"
     tools:context=".view.LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IvLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30mm"
+        />
+
+    <EditText
+        android:inputType="text"
+        android:paddingLeft="2mm"
+        android:id="@+id/EtEmail"
+        android:layout_width="40mm"
+        android:layout_height="8mm"
+        android:layout_below="@id/IvLogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15mm"
+        android:hint="Email"
+        android:background="@drawable/edittext_background"
+        />
+
+    <EditText
+        android:inputType="textPassword"
+        android:paddingLeft="2mm"
+        android:layout_width="40mm"
+        android:layout_height="8mm"
+        android:layout_marginTop="5mm"
+        android:layout_below="@id/EtEmail"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/EtPassword"
+        android:hint="Password"
+        android:background="@drawable/edittext_background"
+
+        />
+
+    <TextView
+        android:id="@+id/forgotPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/EtPassword"
+        android:text="Forgot password ?"
+        android:layout_alignEnd="@id/EtPassword"
+        android:layout_marginBottom="-5mm"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:id="@+id/loginButton"
+        android:layout_below="@id/EtPassword"
+        android:layout_marginTop="8mm"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        />
+</RelativeLayout>
